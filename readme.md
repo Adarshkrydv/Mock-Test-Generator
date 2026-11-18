@@ -1,15 +1,23 @@
 # PrepSim — Mock Test Generator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Live app](https://img.shields.io/badge/live-prepsim--app.vercel.app-2563eb)](https://prepsim-app.vercel.app)
+[![Live app](https://img.shields.io/badge/live-prepsim--mock--test--generator.vercel.app-2563eb)](https://prepsim-mock-test-generator.vercel.app)
 [![React](https://img.shields.io/badge/frontend-React%2019-61dafb)](mock-test-generator/package.json)
 [![Express](https://img.shields.io/badge/backend-Express%205-black)](server/package.json)
 
 PrepSim turns any question paper — a PDF, a Word doc, a photo of a printed sheet, or plain pasted text — into a timed, proctored, auto-graded mock test you can take right in your browser. It's built for students prepping for competitive exams (GATE, SSC, UPSC, banking, and similar) who want to practice under real exam conditions instead of just reading through a paper.
 
-**Live app:** https://prepsim-app.vercel.app
+**Live app:** https://prepsim-mock-test-generator.vercel.app
 
-![PrepSim homepage](mock-test-generator/public/screenshots/desktop-wide.png)
+## Screenshots
+
+![PrepSim home page — "Turn any question paper into a timed mock test"](docs/screenshots/home.png)
+
+| Create a test | Past attempts |
+| :---: | :---: |
+| ![Create a test — upload a file or paste text](docs/screenshots/create-test.png) | ![Past attempts — locally saved test history](docs/screenshots/past-attempts.png) |
+| **Contact** | **Privacy** |
+| ![Contact page](docs/screenshots/contact.png) | ![Privacy policy page](docs/screenshots/privacy.png) |
 
 ## How it works
 
