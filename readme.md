@@ -11,13 +11,13 @@ PrepSim turns any question paper — a PDF, a Word doc, a photo of a printed she
 
 ## Screenshots
 
-![PrepSim home page — "Turn any question paper into a timed mock test"](docs/screenshots/home.png)
+![PrepSim home page — "Turn any question paper into a timed mock test"](screenshots/home.png)
 
 | Create a test | Past attempts |
 | :---: | :---: |
-| ![Create a test — upload a file or paste text](docs/screenshots/create-test.png) | ![Past attempts — locally saved test history](docs/screenshots/past-attempts.png) |
+| ![Create a test — upload a file or paste text](screenshots/create.png) | ![Past attempts — locally saved test history](screenshots/history.png) |
 | **Contact** | **Privacy** |
-| ![Contact page](docs/screenshots/contact.png) | ![Privacy policy page](docs/screenshots/privacy.png) |
+| ![Contact page](screenshots/contact.png) | ![Privacy policy page](screenshots/privacy.png) |
 
 ## How it works
 
