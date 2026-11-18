@@ -4,7 +4,7 @@
 // App.js) so the toggle in SiteHeader affects every page, and the choice
 // persists across navigation and reloads via localStorage.
 //
-// Default behaviour: until the user explicitly picks a theme, Mocksy
+// Default behaviour: until the user explicitly picks a theme, PrepSim
 // follows the OS-level `prefers-color-scheme` setting and keeps following
 // it live (e.g. if the OS switches to dark mode at sunset, the site follows
 // without a reload). The moment the user taps the toggle, that becomes an
@@ -14,7 +14,7 @@
 // system, set == the user's explicit choice.
 import React, { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 
-const STORAGE_KEY = 'mocksy_theme'; // 'light' | 'dark' | absent (= follow system)
+const STORAGE_KEY = 'prepsim_theme'; // 'light' | 'dark' | absent (= follow system)
 const ThemeContext = createContext({ theme: 'light', mode: null, setMode: () => {}, toggleTheme: () => {} });
 
 function systemPrefersDark() {

@@ -3,7 +3,7 @@
 // used from both the exam-flow app shell and the new marketing pages.
 //
 // Behaviour by platform:
-//  - Android: downloads the real Mocksy .apk (see /public/downloads/mocksy.apk)
+//  - Android: downloads the real PrepSim .apk (see /public/downloads/prepsim.apk)
 //    and shows a short "how to install" overlay, since sideloaded APKs need
 //    the user to allow installs from this source.
 //  - iOS: APKs cannot run on iOS at all (Apple does not allow it), so we keep
@@ -13,12 +13,12 @@
 //
 // To ship the real APK: build it with PWABuilder (pwabuilder.com) or
 // Bubblewrap against the live site, then drop the file at
-// public/downloads/mocksy.apk (see public/downloads/README.md).
+// public/downloads/prepsim.apk (see public/downloads/README.md).
 import React, { useState, useEffect } from 'react';
 import { Download, Share, SquarePlus, Check, Settings, FolderOpen } from 'lucide-react';
 
-const APK_PATH = '/downloads/mocksy.apk';
-const APK_VERSION_PATH = '/downloads/mocksy-version.json';
+const APK_PATH = '/downloads/prepsim.apk';
+const APK_VERSION_PATH = '/downloads/prepsim-version.json';
 
 function useInstallPrompt() {
   const [deferredPrompt, setDeferredPrompt] = useState(null);
@@ -98,7 +98,7 @@ export default function InstallAppButton() {
       // Trigger the real APK download.
       const link = document.createElement('a');
       link.href = APK_PATH;
-      link.setAttribute('download', 'Mocksy.apk');
+      link.setAttribute('download', 'PrepSim.apk');
       document.body.appendChild(link);
       link.click();
       link.remove();
@@ -121,7 +121,7 @@ export default function InstallAppButton() {
       {showIosHelp && (
         <div className="mt-ios-help-overlay" onClick={() => setShowIosHelp(false)}>
           <div className="mt-ios-help-card" onClick={(e) => e.stopPropagation()}>
-            <div className="mt-ios-help-title">Install Mocksy on your device</div>
+            <div className="mt-ios-help-title">Install PrepSim on your device</div>
             <div className="mt-ios-help-sub">Adds an app icon to your Home Screen — opens full-screen, no browser bar.</div>
             <ol className="mt-ios-help-steps">
               <li>
@@ -134,7 +134,7 @@ export default function InstallAppButton() {
               </li>
               <li>
                 <span className="mt-ios-help-icon"><Check size={16} /></span>
-                <span>Tap <strong>Add</strong> — Mocksy now opens like any other app.</span>
+                <span>Tap <strong>Add</strong> — PrepSim now opens like any other app.</span>
               </li>
             </ol>
             <button type="button" className="mt-btn mt-btn-primary" style={{ width: '100%', justifyContent: 'center' }} onClick={() => setShowIosHelp(false)}>
@@ -147,12 +147,12 @@ export default function InstallAppButton() {
       {showAndroidHelp && (
         <div className="mt-ios-help-overlay" onClick={() => setShowAndroidHelp(false)}>
           <div className="mt-ios-help-card" onClick={(e) => e.stopPropagation()}>
-            <div className="mt-ios-help-title">Installing Mocksy.apk</div>
+            <div className="mt-ios-help-title">Installing PrepSim.apk</div>
             <div className="mt-ios-help-sub">Your download has started. Since this isn't from the Play Store, Android needs one-time permission to install it.</div>
             <ol className="mt-ios-help-steps">
               <li>
                 <span className="mt-ios-help-icon"><FolderOpen size={16} /></span>
-                <span>Open <strong>Mocksy.apk</strong> from your notification shade or Downloads folder.</span>
+                <span>Open <strong>PrepSim.apk</strong> from your notification shade or Downloads folder.</span>
               </li>
               <li>
                 <span className="mt-ios-help-icon"><Settings size={16} /></span>
@@ -160,7 +160,7 @@ export default function InstallAppButton() {
               </li>
               <li>
                 <span className="mt-ios-help-icon"><Check size={16} /></span>
-                <span>Tap <strong>Install</strong>, then <strong>Open</strong> — Mocksy now runs like any other app on your phone.</span>
+                <span>Tap <strong>Install</strong>, then <strong>Open</strong> — PrepSim now runs like any other app on your phone.</span>
               </li>
             </ol>
             <button type="button" className="mt-btn mt-btn-primary" style={{ width: '100%', justifyContent: 'center' }} onClick={() => setShowAndroidHelp(false)}>

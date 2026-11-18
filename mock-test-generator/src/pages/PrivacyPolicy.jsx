@@ -19,9 +19,9 @@ export default function PrivacyPolicy() {
     <MarketingLayout
       seo={{
         path: '/privacy',
-        title: 'Privacy Policy - Mocksy',
+        title: 'Privacy Policy - PrepSim',
         description:
-          'Read how Mocksy handles uploaded question papers and test data — what is processed, what is stored locally, and what never leaves your device.',
+          'Read how PrepSim handles uploaded question papers and test data — what is processed, what is stored locally, and what never leaves your device.',
       }}
     >
       <div className="mt-marketing-page">

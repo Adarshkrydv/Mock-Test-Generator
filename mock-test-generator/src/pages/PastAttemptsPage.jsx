@@ -43,8 +43,8 @@ export default function PastAttemptsPage() {
     <MarketingLayout
       seo={{
         path: '/history',
-        title: 'Past Attempts - Mocksy',
-        description: 'Your locally-saved history of completed Mocksy mock tests — scores and timing for your last attempts on this device.',
+        title: 'Past Attempts - PrepSim',
+        description: 'Your locally-saved history of completed PrepSim mock tests — scores and timing for your last attempts on this device.',
       }}
     >
       <div className="mt-marketing-page mt-marketing-wide">

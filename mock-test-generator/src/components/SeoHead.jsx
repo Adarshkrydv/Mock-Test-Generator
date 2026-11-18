@@ -14,7 +14,7 @@
 // title/description/OG/Twitter tags were removed from public/index.html;
 // this component is now the single source of truth for all of them, on
 // every route including "/".
-const SITE_URL = 'https://mocksy-app.vercel.app';
+const SITE_URL = 'https://prepsim-app.vercel.app';
 const DEFAULT_IMAGE = `${SITE_URL}/logo512.png`;
 
 export default function SeoHead({ title, description, path, image = DEFAULT_IMAGE }) {

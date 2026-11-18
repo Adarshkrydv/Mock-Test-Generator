@@ -1,6 +1,6 @@
 {
-  "short_name": "Mocksy",
-  "name": "Mocksy - Mock Test Generator",
+  "short_name": "PrepSim",
+  "name": "PrepSim - Mock Test Generator",
   "description": "Turn any question paper into a timed, proctored, auto-graded mock test.",
   "icons": [
     {
@@ -37,14 +37,14 @@
       "sizes": "1280x800",
       "type": "image/png",
       "form_factor": "wide",
-      "label": "Mocksy on desktop"
+      "label": "PrepSim on desktop"
     },
     {
       "src": "screenshots/mobile-narrow.png",
       "sizes": "414x896",
       "type": "image/png",
       "form_factor": "narrow",
-      "label": "Mocksy on mobile"
+      "label": "PrepSim on mobile"
     }
   ]
 }

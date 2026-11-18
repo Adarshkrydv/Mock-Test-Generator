@@ -25,9 +25,9 @@ export default function SiteHeader({ showInstall = false, showNav = true }) {
   return (
     <header className="mt-site-header">
       <NavLink to="/" style={{ display: 'flex', alignItems: 'center', gap: '0.9rem', textDecoration: 'none' }}>
-        <img src={`${process.env.PUBLIC_URL}/mocksy-logo.jpg`} alt="Mocksy logo" width="58" height="58" fetchPriority="high" />
+        <img src={`${process.env.PUBLIC_URL}/prepsim-logo.jpg`} alt="PrepSim logo" width="58" height="58" fetchPriority="high" />
         <div>
-          <div className="mt-brand-name">Mocksy</div>
+          <div className="mt-brand-name">PrepSim</div>
           <div className="mt-brand-tag">Mock Test Generator</div>
         </div>
       </NavLink>

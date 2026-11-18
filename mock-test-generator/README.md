@@ -1,6 +1,6 @@
-# Mocksy — Frontend
+# PrepSim — Frontend
 
-This is the React frontend for **Mocksy**, the mock test generator. It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the React frontend for **PrepSim**, the mock test generator. It was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 For the project overview, features, setup instructions (frontend + backend), tech stack, and deployment notes, see the [root README](../readme.md).
 

@@ -1,20 +1,20 @@
-# Mocksy
+# PrepSim
 
-> Mocksy is a free online mock test generator. Upload any question paper — a PDF, a Word document, an image, or pasted text — and Mocksy turns it into a timed, proctored, auto-graded mock test you can take right in your browser. It's built for students preparing for competitive exams such as GATE, SSC, UPSC, and banking exams.
+> PrepSim is a free online mock test generator. Upload any question paper — a PDF, a Word document, an image, or pasted text — and PrepSim turns it into a timed, proctored, auto-graded mock test you can take right in your browser. It's built for students preparing for competitive exams such as GATE, SSC, UPSC, and banking exams.
 
-Mocksy extracts questions from an uploaded paper using AI, lets you review and edit them, configure timing and negative marking, then presents the test with a live question palette, flagging, and an optional in-test calculator. At the end you get an auto-scored results screen with a breakdown of correct, incorrect, and unanswered questions.
+PrepSim extracts questions from an uploaded paper using AI, lets you review and edit them, configure timing and negative marking, then presents the test with a live question palette, flagging, and an optional in-test calculator. At the end you get an auto-scored results screen with a breakdown of correct, incorrect, and unanswered questions.
 
 ## Main pages
 
-- [Home](https://mocksy-app.vercel.app/): Explains what Mocksy is and how it works, with a link into the tool.
-- [Create a mock test](https://mocksy-app.vercel.app/create): The tool itself — upload a PDF, Word doc, image, or pasted text to generate and take a mock test.
-- [Privacy Policy](https://mocksy-app.vercel.app/privacy): What happens to an uploaded paper (sent to Google's Gemini API for question extraction) and what stays local to your browser (test progress, extraction cache).
-- [Contact Us](https://mocksy-app.vercel.app/contact): How to reach the maintainer or report an issue.
+- [Home](https://prepsim-app.vercel.app/): Explains what PrepSim is and how it works, with a link into the tool.
+- [Create a mock test](https://prepsim-app.vercel.app/create): The tool itself — upload a PDF, Word doc, image, or pasted text to generate and take a mock test.
+- [Privacy Policy](https://prepsim-app.vercel.app/privacy): What happens to an uploaded paper (sent to Google's Gemini API for question extraction) and what stays local to your browser (test progress, extraction cache).
+- [Contact Us](https://prepsim-app.vercel.app/contact): How to reach the maintainer or report an issue.
 
 ## Docs
 
-- [Source code and setup instructions](https://github.com/tprateek01/Mock-Test-Generator): The GitHub repository, including instructions for running the frontend and backend locally.
+- [Source code and setup instructions](https://github.com/Adarshkrydv/Mock-Test-Generator): The GitHub repository, including instructions for running the frontend and backend locally.
 
 ## Optional
 
-- [Get a free Gemini API key](https://aistudio.google.com/apikey): Required by anyone self-hosting Mocksy's backend, which uses Google's Gemini API to extract questions from uploaded papers.
+- [Get a free Gemini API key](https://aistudio.google.com/apikey): Required by anyone self-hosting PrepSim's backend, which uses Google's Gemini API to extract questions from uploaded papers.

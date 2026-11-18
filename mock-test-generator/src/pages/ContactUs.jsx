@@ -9,8 +9,8 @@ import MarketingLayout from '../components/MarketingLayout';
 import { useLanguage } from '../i18n/LanguageContext';
 import { CONTACT_STRINGS } from '../i18n/strings';
 
-const CONTACT_EMAIL = 'admin.mocksy@gmail.com'; // TODO: replace with your real contact email
-const GITHUB_REPO = 'https://github.com/tprateek01/Mock-Test-Generator';
+const CONTACT_EMAIL = 'yshivam96391@gmail.com';
+const GITHUB_REPO = 'https://github.com/Adarshkrydv/Mock-Test-Generator';
 
 export default function ContactUs() {
   const { lang } = useLanguage();
@@ -20,9 +20,9 @@ export default function ContactUs() {
     <MarketingLayout
       seo={{
         path: '/contact',
-        title: 'Contact Us - Mocksy',
+        title: 'Contact Us - PrepSim',
         description:
-          'Get in touch with the Mocksy team — questions, feedback, or bug reports about the free mock test generator.',
+          'Get in touch with the PrepSim team — questions, feedback, or bug reports about the free mock test generator.',
       }}
     >
       <div className="mt-marketing-page">

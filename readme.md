@@ -1,20 +1,20 @@
-# Mocksy — Mock Test Generator
+# PrepSim — Mock Test Generator
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Live app](https://img.shields.io/badge/live-mocksy--app.vercel.app-2563eb)](https://mocksy-app.vercel.app)
+[![Live app](https://img.shields.io/badge/live-prepsim--app.vercel.app-2563eb)](https://prepsim-app.vercel.app)
 [![React](https://img.shields.io/badge/frontend-React%2019-61dafb)](mock-test-generator/package.json)
 [![Express](https://img.shields.io/badge/backend-Express%205-black)](server/package.json)
 
-Mocksy turns any question paper — a PDF, a Word doc, a photo of a printed sheet, or plain pasted text — into a timed, proctored, auto-graded mock test you can take right in your browser. It's built for students prepping for competitive exams (GATE, SSC, UPSC, banking, and similar) who want to practice under real exam conditions instead of just reading through a paper.
+PrepSim turns any question paper — a PDF, a Word doc, a photo of a printed sheet, or plain pasted text — into a timed, proctored, auto-graded mock test you can take right in your browser. It's built for students prepping for competitive exams (GATE, SSC, UPSC, banking, and similar) who want to practice under real exam conditions instead of just reading through a paper.
 
-**Live app:** https://mocksy-app.vercel.app
+**Live app:** https://prepsim-app.vercel.app
 
-![Mocksy homepage](mock-test-generator/public/screenshots/desktop-wide.png)
+![PrepSim homepage](mock-test-generator/public/screenshots/desktop-wide.png)
 
 ## How it works
 
 1. **Upload** — Drop in a PDF, `.docx`, an image of a printed paper, or paste the raw text of a question paper. You can also start from a blank test.
-2. **Review** — Mocksy (via Google's Gemini API) extracts the questions and sections automatically. Nothing starts until you've reviewed and corrected the extraction, so mistakes never slip into your test.
+2. **Review** — PrepSim (via Google's Gemini API) extracts the questions and sections automatically. Nothing starts until you've reviewed and corrected the extraction, so mistakes never slip into your test.
 3. **Configure** — Set total-test, per-section, or per-question timing, and negative marking (including GATE-style fractional marking) to match the real exam.
 4. **Take it** — Sit the test with a live question palette, an optional in-test scientific calculator, and a locked, distraction-free layout.
 5. **Get scored** — Get an instant score breakdown and results chart the moment you submit. The score summary is also saved locally so you can revisit it later from the Past Attempts page.
@@ -115,16 +115,13 @@ The frontend is deployed on [Vercel](https://vercel.com); see `mock-test-generat
 - **CORS in production.** If you deploy the backend and the frontend can't reach it, make sure `ALLOWED_ORIGIN` is set on the backend to your deployed frontend's exact URL.
 - **Past Attempts history is per-browser, not per-device or account.** It's stored in `localStorage`, capped at the most recent 30 attempts (oldest auto-removed). A different browser, a different device, or clearing site data all start with an empty history — there's no sync, since there's no account system.
 
-## Team
+## Author
 
-Built by:
-
-- **Prateek Tripathi** — [GitHub](https://github.com/tprateek01) · [LinkedIn](https://www.linkedin.com/in/prateek-tripathi-3a100a252/)
-- **Anmol Pandey** — [GitHub](https://github.com/AnmolPandey9119) · [LinkedIn](https://www.linkedin.com/in/anmol-pandey-240105376/)
+Built by **Adarsh Kumar Yadav** — [GitHub](https://github.com/Adarshkrydv)
 
 ## Contributing / feedback
 
-Found a bug or have a feature idea? Open an issue on [GitHub Issues](https://github.com/tprateek01/Mock-Test-Generator/issues).
+Found a bug or have a feature idea? Open an issue on [GitHub Issues](https://github.com/Adarshkrydv/Mock-Test-Generator/issues).
 
 ## License
 

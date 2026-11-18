@@ -10,7 +10,7 @@
 //   - the choice persists across navigation and reloads via localStorage.
 import React, { createContext, useCallback, useContext, useEffect, useState } from 'react';
 
-const STORAGE_KEY = 'mocksy_lang';
+const STORAGE_KEY = 'prepsim_lang';
 const LanguageContext = createContext({ lang: 'en', setLang: () => {}, toggleLang: () => {} });
 
 function readInitialLang() {

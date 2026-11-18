@@ -1,4 +1,4 @@
-/* Mocksy service worker
+/* PrepSim service worker
    Caches the app shell so the installed app opens instantly and keeps
    working offline. Uses a "network first, falling back to cache" strategy
    for navigations, and "cache first" for the static build assets, so
@@ -16,22 +16,22 @@
 //
 // Bumped again v2 -> v3: devices that had already installed the app before
 // the v2 deploy went out were still opening straight into the old cached
-// `mocksy-v2` cache entry for logo192/512 (a cache-first strategy only
+// `prepsim-v2` cache entry for logo192/512 (a cache-first strategy only
 // refreshes once the new SW takes over, and some installs never got that
 // far). This bump — together with the matching `?v=3` query bust on the
 // icon URLs below and in manifest.json/index.html — guarantees every
 // existing install throws away its old icon bytes and re-fetches the
 // corrected, opaque-background PNGs on next launch.
-const CACHE_VERSION = 'mocksy-v3';
+const CACHE_VERSION = 'prepsim-v4';
 const APP_SHELL = [
   '/',
   '/index.html',
   '/manifest.json',
   '/favicon.ico',
-  '/logo192.png?v=3',
-  '/logo512.png?v=3',
-  '/apple-touch-icon.png?v=3',
-  '/mocksy-logo.jpg',
+  '/logo192.png?v=4',
+  '/logo512.png?v=4',
+  '/apple-touch-icon.png?v=4',
+  '/prepsim-logo.jpg',
 ];
 
 self.addEventListener('install', (event) => {

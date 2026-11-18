@@ -1,6 +1,6 @@
 // HomePage.jsx
 // The site's actual "home page" — an information/marketing page explaining
-// what Mocksy is and how it works, with a CTA into the tool itself (which
+// what PrepSim is and how it works, with a CTA into the tool itself (which
 // now lives at /create). Previously the Upload screen doubled as the home
 // page with no explanation of the product; this gives first-time visitors
 // (and search engines) something to land on before diving into the tool.
@@ -24,9 +24,9 @@ export default function HomePage() {
     <MarketingLayout
       seo={{
         path: '/',
-        title: 'Mocksy – Free Mock Test Generator | Turn Any Question Paper Into a Timed Test',
+        title: 'PrepSim – Free Mock Test Generator | Turn Any Question Paper Into a Timed Test',
         description:
-          'Mocksy is a free online mock test generator. Upload any question paper (PDF, Word, image, or pasted text) and instantly get a timed, proctored, auto-graded mock test — perfect for GATE, SSC, UPSC, banking, and other competitive exam prep.',
+          'PrepSim is a free online mock test generator. Upload any question paper (PDF, Word, image, or pasted text) and instantly get a timed, proctored, auto-graded mock test — perfect for GATE, SSC, UPSC, banking, and other competitive exam prep.',
       }}
     >
       <div className="mt-marketing-page mt-marketing-wide">

@@ -10,8 +10,8 @@
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <meta name="apple-mobile-web-app-title" content="Mocksy" />
-    <meta name="application-name" content="Mocksy" />
+    <meta name="apple-mobile-web-app-title" content="PrepSim" />
+    <meta name="application-name" content="PrepSim" />
     <!-- Fonts: loaded asynchronously so the font CSS request doesn't block
          first paint. preload fetches it in parallel with everything else;
          onload swaps it in as a real stylesheet once it arrives. The
@@ -47,28 +47,28 @@
     -->
     <meta
       name="keywords"
-      content="mock test generator, mocksy, online mock test, free mock test maker, question paper to test, GATE mock test, SSC mock test, UPSC mock test, exam practice test generator, PDF to test converter, timed test generator, auto grading test"
+      content="mock test generator, prepsim, online mock test, free mock test maker, question paper to test, GATE mock test, SSC mock test, UPSC mock test, exam practice test generator, PDF to test converter, timed test generator, auto grading test"
     />
-    <meta name="author" content="Mocksy" />
+    <meta name="author" content="PrepSim" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
 
     <!-- Open Graph / Facebook / LinkedIn / WhatsApp preview (url/title/description set per-route by SeoHead) -->
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://mocksy-app.vercel.app/logo512.png" />
-    <meta property="og:site_name" content="Mocksy" />
+    <meta property="og:image" content="https://prepsim-app.vercel.app/logo512.png" />
+    <meta property="og:site_name" content="PrepSim" />
 
     <!-- Twitter / X card (url/title/description set per-route by SeoHead) -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:image" content="https://mocksy-app.vercel.app/logo512.png" />
+    <meta name="twitter:image" content="https://prepsim-app.vercel.app/logo512.png" />
 
     <!-- Structured data so Google understands this is a free web app, not just a page -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        "name": "Mocksy",
-        "alternateName": "Mocksy Mock Test Generator",
-        "url": "https://mocksy-app.vercel.app/",
+        "name": "PrepSim",
+        "alternateName": "PrepSim Mock Test Generator",
+        "url": "https://prepsim-app.vercel.app/",
         "description": "Free online mock test generator. Upload any question paper (PDF, Word, image, or pasted text) and get an instant timed, proctored, auto-graded mock test.",
         "applicationCategory": "EducationalApplication",
         "operatingSystem": "Any (Web-based)",
@@ -99,11 +99,11 @@
     <!-- Sets data-theme on <html> before React mounts / first paint, so
          dark-mode users don't see a flash of the light theme on load. Keep
          this in sync with the storage key and fallback logic in
-         src/i18n/ThemeContext.jsx (STORAGE_KEY = 'mocksy_theme'). -->
+         src/i18n/ThemeContext.jsx (STORAGE_KEY = 'prepsim_theme'). -->
     <script>
       (function () {
         try {
-          var saved = window.localStorage.getItem('mocksy_theme');
+          var saved = window.localStorage.getItem('prepsim_theme');
           var theme = saved === 'dark' || saved === 'light'
             ? saved
             : (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');

@@ -4,7 +4,7 @@
 // HomePage can check "is there a test to resume?" without pulling in the
 // entire exam-flow bundle (mammoth, pdfjs, all five screens) just for a
 // one-line localStorage check.
-const TEST_PROGRESS_KEY = 'mocksy_test_progress_v1';
+const TEST_PROGRESS_KEY = 'prepsim_test_progress_v1';
 
 export function saveTestProgress(paper, config, state) {
   try {

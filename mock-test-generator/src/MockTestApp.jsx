@@ -294,7 +294,7 @@ Real-world source documents are messy. Handle all of the following without askin
 // what was silently discontinuing extraction on mobile — the next mount can
 // resume the SAME extraction (same conversation history, same questions
 // already found) instead of forcing the user to re-upload and start over.
-const EXTRACTION_DB_NAME = 'mocksy_extraction_v1';
+const EXTRACTION_DB_NAME = 'prepsim_extraction_v1';
 const EXTRACTION_STORE = 'progress';
 const EXTRACTION_KEY = 'current';
 function openExtractionDB() {
@@ -3073,7 +3073,7 @@ async function generateResultsPdf(state, grade) {
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(18);
   doc.setTextColor(...ink);
-  doc.text('Mocksy — Mock Test Report', marginX, y);
+  doc.text('PrepSim — Mock Test Report', marginX, y);
 
   y += 22;
   doc.setFont('helvetica', 'normal');
@@ -3369,8 +3369,8 @@ export default function MockTestApp() {
     <div className="mt-app-shell">
       <SeoHead
         path="/create"
-        title="Create a Mock Test - Mocksy"
-        description="Upload a question paper (PDF, Word, image, or pasted text) and Mocksy turns it into a timed, proctored, auto-graded mock test in seconds."
+        title="Create a Mock Test - PrepSim"
+        description="Upload a question paper (PDF, Word, image, or pasted text) and PrepSim turns it into a timed, proctored, auto-graded mock test in seconds."
       />
       <SiteHeader showInstall={showChrome} showNav={showChrome} />
       <main className="mt-stage-area">

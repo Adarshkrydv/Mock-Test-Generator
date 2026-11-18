@@ -11,7 +11,7 @@
 // Capped at MAX_ATTEMPTS entries, oldest-first (FIFO) eviction: entries are
 // stored newest-first, so once the list would exceed the cap, the oldest
 // entry (the last one in the array) is dropped.
-const TEST_HISTORY_KEY = 'mocksy_test_history_v1';
+const TEST_HISTORY_KEY = 'prepsim_test_history_v1';
 export const MAX_ATTEMPTS = 30;
 
 export function getTestHistory() {

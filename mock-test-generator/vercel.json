@@ -8,7 +8,7 @@
           "value": "mock-test-live.vercel.app"
         }
       ],
-      "destination": "https://mocksy-app.vercel.app/:path*",
+      "destination": "https://prepsim-app.vercel.app/:path*",
       "permanent": true
     }
   ],

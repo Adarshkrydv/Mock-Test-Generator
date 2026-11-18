@@ -17,6 +17,6 @@ root.render(
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
 
-// Registers the service worker so Mocksy can be installed as an app and
+// Registers the service worker so PrepSim can be installed as an app and
 // keep working offline once installed.
 serviceWorkerRegistration.register();
