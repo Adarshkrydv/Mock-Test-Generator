@@ -17,6 +17,10 @@ import { useLanguage } from '../i18n/LanguageContext';
 import { useTheme } from '../i18n/ThemeContext';
 import { NAV_STRINGS } from '../i18n/strings';
 
+// Feature flag: the "Download App" button is temporarily hidden.
+// Set to true to bring it back (no other changes needed).
+const ENABLE_DOWNLOAD_APP = false;
+
 export default function SiteHeader({ showInstall = false, showNav = true }) {
   const { lang, toggleLang } = useLanguage();
   const { theme, toggleTheme } = useTheme();
@@ -64,7 +68,7 @@ export default function SiteHeader({ showInstall = false, showNav = true }) {
           <span className="mt-lang-sep">/</span>
           <span className={lang === 'hi' ? 'mt-lang-active' : ''}>हिं</span>
         </button>
-        {showInstall && <InstallAppButton />}
+        {ENABLE_DOWNLOAD_APP && showInstall && <InstallAppButton />}
       </div>
     </header>
   );

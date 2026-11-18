@@ -1,6 +1,6 @@
 // GlobalStyles.jsx
-// Extracted from MockTestApp.jsx so the design-system CSS (icy teal paper,
-// deep-teal ink, raspberry accent) can be shared by the exam-flow screens AND the new
+// Extracted from MockTestApp.jsx so the design-system CSS (pale-blue paper,
+// navy ink, royal-blue primary, orange accent) can be shared by the exam-flow screens AND the new
 // marketing pages (Home / Privacy / Contact) without duplicating it.
 import React from 'react';
 
@@ -18,21 +18,23 @@ export default function GlobalStyles() {
          which was blocking first paint and hurting mobile Performance. */
 
       .mt-root {
-        --paper: #EDF4F6;
-        --paper-dim: #DCE9ED;
+        --paper: #EEF3FC;
+        --paper-dim: #DFE8F8;
         --surface: #FFFFFF;
-        --ink: #0F2A33;
-        --ink-soft: #3B5760;
-        --ink-faint: #506B74;
-        --rule: #C3D6DC;
-        --brass: #B0285E;
-        --brass-soft: #F6D9E5;
-        --alert: #BD3A0A;
-        --alert-soft: #F9E0D3;
+        --ink: #0B1F4D;
+        --ink-soft: #3A4F7F;
+        --ink-faint: #53688F;
+        --rule: #C5D3EE;
+        --royal: #1F4FD8;
+        --on-royal: #FFFFFF;
+        --brass: #C2410C;
+        --brass-soft: #FDE6D3;
+        --alert: #B91C1C;
+        --alert-soft: #FBDADA;
         --answered: #1F7A4D;
         --answered-soft: #D6EDE0;
-        --review: #8A5A00;
-        --review-soft: #F5E8C8;
+        --review: #6B3FC0;
+        --review-soft: #E9E1FA;
         background: var(--paper);
         color: var(--ink);
         font-family: 'IBM Plex Sans', ui-sans-serif, system-ui, sans-serif;
@@ -50,28 +52,30 @@ export default function GlobalStyles() {
          --surface additions below replacing hardcoded #fff — so this block
          is the only place theme colors need to change. */
       [data-theme='dark'] .mt-root {
-        --paper: #0B1A1F;
-        --paper-dim: #112429;
-        --surface: #152C33;
-        --ink: #E3F0F2;
-        --ink-soft: #A9C3C9;
-        --ink-faint: #7F9CA4;
-        --rule: #264049;
-        --brass: #F06FA0;
-        --brass-soft: #3A1A2A;
-        --alert: #FF9060;
-        --alert-soft: #3A2218;
+        --paper: #0A1330;
+        --paper-dim: #101C42;
+        --surface: #15224F;
+        --ink: #E6ECFB;
+        --ink-soft: #AEBCE0;
+        --ink-faint: #8394C2;
+        --rule: #27386E;
+        --royal: #6C97FF;
+        --on-royal: #0A1330;
+        --brass: #FF9A4D;
+        --brass-soft: #3D2410;
+        --alert: #FF7A7A;
+        --alert-soft: #3A1A1E;
         --answered: #5CCB91;
-        --answered-soft: #153322;
-        --review: #E5B454;
-        --review-soft: #3A2E12;
+        --answered-soft: #12332A;
+        --review: #B79BFF;
+        --review-soft: #2A2050;
       }
       /* Light accent fills in dark mode need dark text to stay legible. */
       [data-theme='dark'] .mt-btn-brass,
       [data-theme='dark'] .mt-btn-review,
       [data-theme='dark'] .mt-bubble.answered,
       [data-theme='dark'] .mt-bubble.marked,
-      [data-theme='dark'] .mt-bubble.answered-marked { color: #0B1A1F; }
+      [data-theme='dark'] .mt-bubble.answered-marked { color: #0A1330; }
 
       .mt-serif { font-family: 'Source Serif 4', Georgia, serif; }
       .mt-mono { font-family: 'IBM Plex Mono', ui-monospace, monospace; font-variant-numeric: tabular-nums; }
@@ -80,7 +84,7 @@ export default function GlobalStyles() {
         background: var(--surface);
         border: 1px solid var(--rule);
         border-radius: 3px;
-        box-shadow: 0 1px 0 rgba(15,42,51,0.03);
+        box-shadow: 0 1px 0 rgba(11,31,77,0.03);
       }
       .mt-hairline { border-color: var(--rule); }
 
@@ -99,7 +103,7 @@ export default function GlobalStyles() {
       }
       .mt-btn:active { transform: translateY(1px); }
       .mt-btn:disabled { opacity: 0.4; cursor: not-allowed; }
-      .mt-btn-primary { background: var(--ink); color: var(--paper); }
+      .mt-btn-primary { background: var(--royal); color: var(--on-royal); }
       .mt-btn-primary:hover:not(:disabled) { filter: brightness(1.15); }
       .mt-btn-brass { background: var(--brass); color: #fff; }
       .mt-btn-brass:hover:not(:disabled) { filter: brightness(1.08); }
@@ -170,7 +174,7 @@ export default function GlobalStyles() {
         position: relative;
       }
       .mt-bubble:hover { transform: scale(1.06); }
-      .mt-bubble.current { outline: 2px solid var(--ink); outline-offset: 2px; }
+      .mt-bubble.current { outline: 2px solid var(--royal); outline-offset: 2px; }
       .mt-bubble.not-visited { background: var(--surface); border-color: var(--rule); color: var(--ink-faint); }
       .mt-bubble.not-answered { background: var(--alert-soft); border-color: var(--alert); color: var(--alert); }
       .mt-bubble.answered { background: var(--answered); border-color: var(--answered); color: #fff; }
@@ -239,9 +243,9 @@ export default function GlobalStyles() {
         flex-shrink: 0;
         display: flex; align-items: center; justify-content: center;
       }
-      .mt-radio.checked { border-color: var(--ink); }
+      .mt-radio.checked { border-color: var(--royal); }
       .mt-radio.checked::after {
-        content: ''; width: 0.55rem; height: 0.55rem; border-radius: 999px; background: var(--ink);
+        content: ''; width: 0.55rem; height: 0.55rem; border-radius: 999px; background: var(--royal);
       }
 
       .mt-option-row {
@@ -253,7 +257,7 @@ export default function GlobalStyles() {
         transition: border-color 0.1s ease, background 0.1s ease;
       }
       .mt-option-row:hover { border-color: var(--ink-faint); }
-      .mt-option-row.selected { border-color: var(--ink); background: var(--paper-dim); }
+      .mt-option-row.selected { border-color: var(--royal); background: var(--paper-dim); }
 
       /* Locks a screen to the height of its container (the app shell's
          content area, below the site header) so header/footer stay put
@@ -289,7 +293,7 @@ export default function GlobalStyles() {
         border-radius: 50%;
         flex-shrink: 0;
         border: 2px solid var(--brass);
-        box-shadow: 0 2px 6px rgba(15,42,51,0.15);
+        box-shadow: 0 2px 6px rgba(11,31,77,0.15);
       }
       .mt-brand-name {
         font-family: 'Pacifico', cursive;
@@ -350,7 +354,7 @@ export default function GlobalStyles() {
       .mt-ios-help-overlay {
         position: fixed;
         inset: 0;
-        background: rgba(15,42,51,0.45);
+        background: rgba(11,31,77,0.45);
         display: flex;
         align-items: flex-end;
         justify-content: center;
@@ -368,7 +372,7 @@ export default function GlobalStyles() {
         max-width: 26rem;
         width: 100%;
         padding: 1.25rem 1.35rem 1.5rem;
-        box-shadow: 0 12px 32px rgba(15,42,51,0.25);
+        box-shadow: 0 12px 32px rgba(11,31,77,0.25);
       }
       .mt-ios-help-title {
         font-family: 'Source Serif 4', Georgia, serif;
@@ -429,7 +433,7 @@ export default function GlobalStyles() {
         display: flex;
         align-items: center;
         justify-content: center;
-        box-shadow: 0 4px 12px rgba(15,42,51,0.25);
+        box-shadow: 0 4px 12px rgba(11,31,77,0.25);
         border: none;
         cursor: pointer;
         z-index: 60;
@@ -449,7 +453,7 @@ export default function GlobalStyles() {
         background: var(--surface);
         border: 1px solid var(--rule);
         border-radius: 8px;
-        box-shadow: 0 14px 34px rgba(15,42,51,0.28);
+        box-shadow: 0 14px 34px rgba(11,31,77,0.28);
         z-index: 60;
         overflow: hidden;
       }
@@ -524,7 +528,7 @@ export default function GlobalStyles() {
       .mt-calc-btn.op { color: var(--brass); border-color: var(--brass-soft); background: var(--brass-soft); }
       .mt-calc-btn.op:hover { filter: brightness(1.05); }
       .mt-calc-btn.clear { color: var(--alert); }
-      .mt-calc-btn.equals { background: var(--ink); color: var(--paper); border-color: var(--ink); grid-column: span 2; }
+      .mt-calc-btn.equals { background: var(--royal); color: var(--on-royal); border-color: var(--royal); grid-column: span 2; }
       .mt-calc-btn.equals:hover { filter: brightness(1.2); }
       .mt-calc-btn.zero { grid-column: span 2; }
       .mt-calc-btn.fn {
@@ -699,7 +703,7 @@ export default function GlobalStyles() {
       }
       .mt-feature-card:hover {
         transform: translateY(-2px);
-        box-shadow: 0 6px 16px rgba(15,42,51,0.08);
+        box-shadow: 0 6px 16px rgba(11,31,77,0.08);
       }
       .mt-feature-card .mt-seal { margin-bottom: 0.7rem; }
       .mt-feature-card h2 {
@@ -736,7 +740,7 @@ export default function GlobalStyles() {
       }
       .mt-step:hover {
         transform: translateY(-2px);
-        box-shadow: 0 6px 16px rgba(15,42,51,0.08);
+        box-shadow: 0 6px 16px rgba(11,31,77,0.08);
       }
       .mt-step::before {
         counter-increment: mt-step;
